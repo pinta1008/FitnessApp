@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/trImage"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uploadimg"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/naziv"
+            android:text="Naziv vježbe:"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/trImage"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/exeTitle"
+            android:text="Title"
+            android:gravity="center_horizontal"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/trImage"
+            android:layout_below="@+id/naziv"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ponavljanja"
+            android:text="Pon:"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/exeTitle"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/exePonavljanja"
+            android:text="Ponav"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/exeTitle"
+            android:layout_below="@+id/ponavljanja"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/serije"
+            android:text="Ser:"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/exePonavljanja"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/exeSerije"
+            android:text="Serije"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_below="@+id/serije"
+            android:layout_toEndOf="@+id/exePonavljanja"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ukupno"
+            android:text="Uk:"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/exeSerije"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/exeUkupno"
+            android:text="Ukupno"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_below="@+id/ukupno"
+            android:layout_toEndOf="@+id/exeSerije"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/tezina"
+            android:text="Tež:"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/exeUkupno"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/exeWeight"
+            android:text="Tezina"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:layout_below="@+id/tezina"
+            android:layout_toEndOf="@+id/exeUkupno"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

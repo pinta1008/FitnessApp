@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Početna"
+        android:icon="@drawable/ic_baseline_fitness_center_24"/>
+
+    <item
+        android:id="@+id/Training"
+        android:title="Trening"
+        android:icon="@drawable/ic_baseline_sports_kabaddi_24"/>
+
+    <item
+        android:title="" />
+
+    <item
+    android:id="@+id/myTraining"
+    android:title="Lista Treninga"
+    android:icon="@drawable/ic_baseline_format_list_numbered_24"/>
+    <item
+        android:id="@+id/logoutFab"
+        android:title="Odjava"
+        android:enabled="false"/>
+
+
+
+</menu>

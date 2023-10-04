@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/revCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:id="@+id/revName"
+            android:text="Korisničko ime"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"/>
+
+
+        <ImageButton
+            android:id="@+id/deleteImg"
+            android:layout_width="wrap_content"
+            android:src="@drawable/remove_lavender"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

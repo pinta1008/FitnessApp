@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".trening.TrainingListDetails"
+        android:background="@drawable/background2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbarUp"
+            android:background="@drawable/shape_toolbar01">
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Prikaz vježbi u mojem treningu"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@id/toolbarUp"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="#FFFFFF"
+            android:focusable="false"
+            app:closeIcon="@drawable/ic_baseline_clear_24"
+            app:iconifiedByDefault="false"
+            app:queryHint="Pretraži..."
+            app:searchHintIcon="@null"
+            app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:text="Broj vježbi u ovom treningu:"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/broj_vjezbi"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="@color/black"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="?attr/actionBarSize"
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/recycler_my_training_exercise_item"
+            android:layout_below="@+id/SearchBar"/>
+
+    </LinearLayout>
